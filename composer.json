@@ -1,0 +1,41 @@
+{
+	"name": "mati-core/utils",
+	"license": "MIT",
+	"description": "Utilities for MatiCore",
+	"homepage": "https://github.com/mati-core/utils",
+	"authors": [
+		{
+			"name": "Martin Olmr",
+			"homepage": "https://martinolmr.cz"
+		},
+		{
+			"name": "Jan Barášek",
+			"homepage": "https://baraja.cz"
+		}
+	],
+	"require": {
+		"php": ">=8.0",
+		"nette/utils": "^3.0",
+		"nette/di": "^3.0",
+		"baraja-core/doctrine": "~2.0",
+		"baraja-core/package-manager": "~2.0"
+	},
+	"require-dev": {
+		"nette/tester": "~2.0",
+		"tracy/tracy": "^2.3",
+		"phpstan/phpstan": "^0.12",
+		"phpstan/phpstan-nette": "^0.12.6"
+	},
+	"autoload": {
+		"classmap": [
+			"src/"
+		]
+	},
+	"minimum-stability": "stable",
+	"scripts": {
+		"phpstan": [
+			"vendor/bin/phpstan analyse src -c phpstan.neon --level 6 --no-progress"
+		],
+		"tester": "tester tests -s"
+	}
+}
