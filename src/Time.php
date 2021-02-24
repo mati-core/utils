@@ -7,6 +7,10 @@ namespace MatiCore\Utils;
 
 use Nette\StaticClass;
 
+/**
+ * Class Time
+ * @package MatiCore\Utils
+ */
 class Time
 {
 

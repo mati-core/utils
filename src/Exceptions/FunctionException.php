@@ -5,6 +5,10 @@ declare(strict_types=1);
 namespace MatiCore\Utils;
 
 
+/**
+ * Class FunctionException
+ * @package MatiCore\Utils
+ */
 class FunctionException extends \Exception
 {
 

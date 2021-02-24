@@ -99,7 +99,7 @@ class Safe
 				$disableFunctions = ini_get('disable_functions');
 
 				if (\is_string($disableFunctions)) {
-					$disabled = explode(',', $disableFunctions) ? : [];
+					$disabled = explode(',', $disableFunctions);
 				}
 			}
 
